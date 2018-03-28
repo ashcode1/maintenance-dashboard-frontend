@@ -1,0 +1,17 @@
+<h1 class="title is-4">Cost by Property Type</h1>
+
+<div>
+  <ul>  
+    <li class="is-inline-block is-grouped"><button id="House" class="button is-light" (click)="onSelect($event)">House</button></li>
+    <li class="is-inline-block is-grouped"><button id="Apartment" class="button is-light" (click)="onSelect($event)">Apartment</button></li>
+    <li class="is-inline-block is-grouped"><button id="House" class="button is-light" (click)="onSelect($event)">House</button></li>
+    <li class="is-inline-block is-grouped"><button id="Bungalow" class="button is-light" (click)="onSelect($event)">Bungalow</button></li>
+  </ul>
+</div>
+
+<h3 class="subtitle is-5">Total cost of all current {{ selectedPropertyType }} work: £{{ totalCost }}</h3>
+
+
+<div *ngIf="chart">
+  <canvas id="costByCategoryBars">{{ chart }}</canvas>
+</div>  

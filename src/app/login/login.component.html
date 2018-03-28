@@ -1,0 +1,48 @@
+<div class="modal is-active">
+<!-- <div> -->
+
+  <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- login form -->
+      <div class="field" (submit)="loginUser($event)">
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="username">
+        </p>
+      </div>
+
+      <div class="field">
+        <p class="control has-icons-left">
+
+          <input class="input" type="password" placeholder="Password">
+
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button is-success" type="submit" ng-click="activeButton()">
+            Login
+          </button>
+        </p>
+      </div>          
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div> 
+<!-- 
+  <form (submit)="loginUser($event)">
+    <div class="input">
+      <label>username</label>
+      <input type="text">
+    </div>      
+    
+    <div class="input">
+        <label>password</label>
+        <input type="password">
+    </div>
+
+    <div class="input">
+        <input type="submit" value="Login">
+    </div>
+  </form> -->
